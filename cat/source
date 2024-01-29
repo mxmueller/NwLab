@@ -1,0 +1,32 @@
+
+
+
+    // Überprüfen, ob Befehlszeilenargumente vorhanden sind
+    if (argc > 1) {
+
+        printf("if statemante");
+        // Datei öffnen, die als erstes Befehlszeilenargument angegeben ist
+        fd = open(argv[1], O_RDONLY);
+
+        // Überprüfen, ob das Öffnen der Datei erfolgreich war
+        if (fd < 0) {
+            printf("Fehler beim Öffnen der Datei %s\n", argv[1]);
+            return -1; // Rückgabe von -1, um auf einen Fehlerzustand hinzuweisen
+        }
+    } else {
+        printf("while");
+        fd = STDIN_FILENO; // Wenn keine Datei angegeben ist, den Standardinput verwenden
+    }
+
+    // Schleife zum Lesen und Schreiben von Daten
+    while ((n = read(fd, buf, BUFSIZE)) > 0) {
+
+        printf("while");
+
+        // Daten auf den Standardoutput schreiben
+        if (write(STDOUT_FILENO, buf, n) != n) {
+            // Fehler beim Schreiben (nicht vollständig behandelt)
+            // Hier könnten weitere Maßnahmen ergriffen werden, je nach Bedarf
+            printf("error");
+        }
+    }
