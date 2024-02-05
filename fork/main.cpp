@@ -4,11 +4,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+
 int main(int argc, char *argv[]) {
     int i;
     pid_t pid;
     int status;
-    int maxprocs = 500;
+    int maxprocs = 500; // https://apple.stackexchange.com/questions/373063/why-is-macos-limited-to-1064-or-2088-processes#:~:text=In%20macOS%2C%20the%20system%20is,Why%20is%20there%20a%20limit%3F
     int procs;
 
     for (procs = 0; procs < maxprocs; procs++) {
@@ -17,10 +18,12 @@ int main(int argc, char *argv[]) {
             return 0;
         }
         if (pid == 0) {
-            srand((unsigned int)time(NULL) ^ getpid());
+
+            pid = getpid();
+
             for (i = 0; i < 5; i++) {
                 printf("Kind im Schleifendurchlauf Nummer %d\n", i);
-                sleep(1 + rand() % 5);
+                sleep(pid % 10);
             }
             printf("Ende des Kindprozesses\n");
             return 0;

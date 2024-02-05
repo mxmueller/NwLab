@@ -1,0 +1,9 @@
+# ninja log v5
+1	60	1707124686380348750	CMakeFiles/sockets_deepdive.dir/main.cpp.o	6a5fa05b870da479
+61	106	1707124686426025956	sockets_deepdive	6e4f463b5d98f7f6
+1	58	1707126138040237274	CMakeFiles/sockets_deepdive.dir/main.cpp.o	6a5fa05b870da479
+58	108	1707126138090982859	sockets_deepdive	6e4f463b5d98f7f6
+1	64	1707126279405656340	CMakeFiles/sockets_deepdive.dir/main.cpp.o	6a5fa05b870da479
+64	108	1707126279450341835	sockets_deepdive	6e4f463b5d98f7f6
+0	66	1707126864410834718	CMakeFiles/sockets_deepdive.dir/main.cpp.o	6a5fa05b870da479
+66	112	1707126864456734899	sockets_deepdive	6e4f463b5d98f7f6
