@@ -1,0 +1,3 @@
+/Users/mumaxi2/git/mxmueller/NwLab/sockets_echo/cmake-build-debug/CMakeFiles/sockets_echo.dir
+/Users/mumaxi2/git/mxmueller/NwLab/sockets_echo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mumaxi2/git/mxmueller/NwLab/sockets_echo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
